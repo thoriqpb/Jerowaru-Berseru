@@ -24,9 +24,6 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
-  <!-- Add in <swiper> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
@@ -38,8 +35,6 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
-
-<body class="index-page">
 
 <body class="index-page">
 
@@ -56,8 +51,8 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="#" class="active">Profil Tim</a></li>
+          <li><a href="#" class="active">Beranda</a></li>
+          <li><a href="about.html">Profil Tim</a></li>
           <!-- <li><a href="services.html">Our Services</a></li> -->
           <!-- <li><a href="testimonials.html">Testimonials</a></li> -->
           <li><a href="#">Kegiatan</a></li>
@@ -85,22 +80,82 @@
 
     </div>
   </header>
-  
+
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
-      <div class="container position-relative">
-        <h1>Tentang Kami</h1>
-        <p>KKN-PPM UGM Periode II Tahun 2026</p>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">About</li>
-          </ol>
-        </nav>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item active">
+          <img src="assets/img/hero_1.jpg" alt="">
+          <div class="carousel-container">
+            <h2>Jerowaru</h2>
+            <p>Salah satu Kecamatan yang ada di Kabupaten Lombok Timur merupakan kawasan pesisir strategis yang berada dalam koridor pengembangan KEK Mandalika dan berhadapan langsung dengan Samudera Indonesia serta Selat Alas.</p>
+        </div><!-- End Carousel Item -->
+
       </div>
-    </div><!-- End Page Title -->
+
+    </section><!-- /Hero Section -->
+
+    <!-- Services Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <img src="assets/img/img_long_5.jpg" alt="Image" class="img-fluid img-overlap" data-aos="zoom-out">
+            </div>
+
+            <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+              <h2 class="content-title mb-4">
+                Desa Sekaroh
+              </h2>
+
+              <p class="opacity-10">
+                Desa dengan pantai indah dan gili menawan, seperti Pantai Pink, Gili Petelu, Pantai Segui, dan kawasan konservasi penyu di Tanjung Bloam.
+              </p>
+
+              <div class="row my-5">
+                <div class="col-lg-12 d-flex align-items-start mb-4">
+                  <i class="bi bi-cloud-rain me-4 display-6"></i>
+                  <div>
+                    <h4 class="m-0 h5 text-white">Plants need rain</h4>
+                    <p class="text-white opacity-50">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+
+                <div class="col-lg-12 d-flex align-items-start mb-4">
+                  <i class="bi bi-heart me-4 display-6"></i>
+                  <div>
+                    <h4 class="m-0 h5 text-white">Love organic foods</h4>
+                    <p class="text-white opacity-50">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+
+                <div class="col-lg-12 d-flex align-items-start">
+                  <i class="bi bi-shop me-4 display-6"></i>
+                  <div>
+                    <h4 class="m-0 h5 text-white">Sell vegetables</h4>
+                    <p class="text-white opacity-50">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Telusuri button -->
+              <p><a href="#" class="btn-cta">Telusuri</a></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- /About Section -->
 
     <!-- About 3 Section -->
     <section id="about-3" class="about-3 section">
@@ -108,16 +163,12 @@
       <div class="container">
         <div class="row gy-4 justify-content-between align-items-center">
           <div class="col-lg-6 order-lg-2 position-relative" data-aos="zoom-out">
-            <img src="assets/img/dpl.png" alt="Image" class="img-fluid">
-            <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn">
-              <span class="play"><i class="bi bi-play-fill"></i></span>
-            </a> -->
+            <img src="assets/img/img_sq_1.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-5 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-            <h1 class="content-title mb-2" style="font-size: 25px;">Dosen Pembimbing Lapangan</h1>
-            <h1 style="font-size: 25px; font-weight: 700;">Rochdi Mohan Nazala, S.I.P., M.A. M.Lit</h1>
+            <h2 class="content-title mb-4">Desa Seriwe</h2>
             <p class="mb-4">
-              STUDIES IN HUMAN SOCIETY / INTERNATIONAL RELATIONS/ POLITICAL SCIENCE
+              Desa terpencil hasil pemekaran Desa Pemongkong, dengan masyarakat majemuk dan tradisi lokal yang kuat.
             </p>
             <ul class="list-unstyled list-check">
               <li>Lorem ipsum dolor sit amet</li>
@@ -125,162 +176,140 @@
               <li>Repellat aliquam nihil illo</li>
             </ul>
 
-            <p><a href="#" class="btn-cta">Get in touch</a></p>
+            <p><a href="#" class="btn-cta">Telusuri</a></p>
           </div>
         </div>
       </div>
     </section><!-- /About 3 Section -->
 
-
-    <!-- Your existing team section -->
-    <section class="team-15 team section" id="team">
+    <!-- Services 2 Section -->
+    <section id="services-2" class="services-2 section dark-background">
+      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Anggota Tim</h2>
-        <p>Saintek</p>
-      </div>
+        <h2>Galeri</h2>
+        <p>Komoditas dan Potensi</p>
+      </div><!-- End Section Title -->
 
-      <div class="container">
-        <div class="swiper team-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="person">
-                <figure>
-                  <img src="assets/img/team/Thoriq Putra Belligan_Saintek.png" alt="Image" class="img-fluid">
-                  <div class="social">
-                    <a href="#"><span class="bi bi-facebook"></span></a>
-                    <a href="#"><span class="bi bi-twitter-x"></span></a>
-                    <a href="#"><span class="bi bi-linkedin"></span></a>
+      <div class="services-carousel-wrap">
+        <div class="container">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "navigation": {
+                  "nextEl": ".js-custom-next",
+                  "prevEl": ".js-custom-prev"
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 40
+                  },
+                  "1200": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 40
+                  }
+                }
+              }
+            </script>
+            <button class="navigation-prev js-custom-prev">
+              <i class="bi bi-arrow-left-short"></i>
+            </button>
+            <button class="navigation-next js-custom-next">
+              <i class="bi bi-arrow-right-short"></i>
+            </button>
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="service-item">
+                  <div class="service-item-contents">
+                    <a href="#">
+                      <span class="service-item-category">Potensi</span>
+                      <h2 class="service-item-title">Lahan Subur</h2>
+                    </a>
                   </div>
-                </figure>
-                <div class="person-contents">
-                  <h3>Thoriq Putra Belligan</h3>
-                  <span class="position">Teknologi Rekayasa Instrumentasi dan Kontrol</span>
-                  <h1>Kormater Saintek</h1>
+                  <div class="img-square-wrapper">
+                    <img src="assets/img/potensi_1.png" alt="Image" class="img-fluid">
+                  </div>
                 </div>
               </div>
+
+              <div class="swiper-slide">
+                <div class="service-item">
+                  <div class="service-item-contents">
+                    <a href="#">
+                      <span class="service-item-category">Komoditas</span>
+                      <h2 class="service-item-title">Jagung</h2>
+                    </a>
+                  </div>
+                  <div class="img-square-wrapper">
+                    <img src="assets/img/potensi_2.png" alt="Image" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="service-item">
+                  <div class="service-item-contents">
+                    <a href="#">
+                      <span class="service-item-category">Potensi</span>
+                      <h2 class="service-item-title">Pantai Pink</h2>
+                    </a>
+                  </div>
+                  <div class="img-square-wrapper">
+                    <img src="assets/img/potensi_3.jpg" alt="Image" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="service-item">
+                  <div class="service-item-contents">
+                    <a href="#">
+                      <span class="service-item-category">Wisata snorkeling</span>
+                      <h2 class="service-item-title">Gili Patelu</h2>
+                    </a>
+                  </div>
+                  <div class="img-square-wrapper">
+                    <img src="assets/img/potensi_4.png" alt="Image" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="service-item">
+                  <div class="service-item-contents">
+                    <a href="#">
+                      <span class="service-item-category">Komoditas</span>
+                      <h2 class="service-item-title">Rumput Laut</h2>
+                    </a>
+                  </div>
+                  <div class="img-square-wrapper">
+                    <img src="assets/img/potensi_5.png" alt="Image" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+              
             </div>
-
-            <div class="swiper-slide">
-              <div class="person">
-                <figure>
-                  <img src="assets/img/team/Rivaldi Maulana_Saintek.png" alt="Image" class="img-fluid">
-                  <div class="social">
-                    <a href="#"><span class="bi bi-facebook"></span></a>
-                    <a href="#"><span class="bi bi-twitter-x"></span></a>
-                    <a href="#"><span class="bi bi-linkedin"></span></a>
-                  </div>
-                </figure>
-                <div class="person-contents">
-                  <h3>Rivaldi Maulana</h3>
-                  <span class="position">Teknologi Survei dan Pemetaan Dasar</span>
-                  <h1>Koordinator DDD</h1>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="person">
-                <figure>
-                  <img src="assets/img/team/Devran Amarifki Rosendra_Saintek.jpg" alt="Image" class="img-fluid">
-                  <div class="social">
-                    <a href="#"><span class="bi bi-facebook"></span></a>
-                    <a href="#"><span class="bi bi-twitter-x"></span></a>
-                    <a href="#"><span class="bi bi-linkedin"></span></a>
-                  </div>
-                </figure>
-                <div class="person-contents">
-                  <h3>Devran Amarifki Rosendra</h3>
-                  <span class="position">Geografi</span>
-                  <h1>Humas</h1>
-                </div>
-              </div>
-            </div>
-<!-- 
-            <div class="swiper-slide">
-              <div class="person">
-                <figure>
-                  <img src="assets/img/team/team-4.jpg" alt="Image" class="img-fluid">
-                  <div class="social">
-                    <a href="#"><span class="bi bi-facebook"></span></a>
-                    <a href="#"><span class="bi bi-twitter-x"></span></a>
-                    <a href="#"><span class="bi bi-linkedin"></span></a>
-                  </div>
-                </figure>
-                <div class="person-contents">
-                  <h3>4 Aulia Atria Aznaini</h3>
-                  <span class="position">Hubungan Internasional</span>
-                  <h1>Kormanit</h1>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="person">
-                <figure>
-                  <img src="assets/img/team/team-2.jpg" alt="Image" class="img-fluid">
-                  <div class="social">
-                    <a href="#"><span class="bi bi-facebook"></span></a>
-                    <a href="#"><span class="bi bi-twitter-x"></span></a>
-                    <a href="#"><span class="bi bi-linkedin"></span></a>
-                  </div>
-                </figure>
-                <div class="person-contents">
-                  <h3>5 Aulia Atria Aznaini</h3>
-                  <span class="position">Hubungan Internasional</span>
-                  <h1>Kormanit</h1>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="person">
-                <figure>
-                  <img src="assets/img/team/team-4.jpg" alt="Image" class="img-fluid">
-                  <div class="social">
-                    <a href="#"><span class="bi bi-facebook"></span></a>
-                    <a href="#"><span class="bi bi-twitter-x"></span></a>
-                    <a href="#"><span class="bi bi-linkedin"></span></a>
-                  </div>
-                </figure>
-                <div class="person-contents">
-                  <h3>6 Aulia Atria Aznaini</h3>
-                  <span class="position">Hubungan Internasional</span>
-                  <h1>Kormanit</h1>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="person">
-                <figure>
-                  <img src="assets/img/team/team-3.jpg" alt="Image" class="img-fluid">
-                  <div class="social">
-                    <a href="#"><span class="bi bi-facebook"></span></a>
-                    <a href="#"><span class="bi bi-twitter-x"></span></a>
-                    <a href="#"><span class="bi bi-linkedin"></span></a>
-                  </div>
-                </figure>
-                <div class="person-contents">
-                  <h3>7 Aulia Atria Aznaini</h3>
-                  <span class="position">Hubungan Internasional</span>
-                  <h1>Kormanit</h1>
-                </div>
-              </div>
-            </div> -->
-            <!-- Repeat swiper-slide for each team member -->
-          </div>
-
-          <!-- Optional controls -->
-          <!-- <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div> -->
-          <div class="swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
         </div>
       </div>
-    </section>
+    </section><!-- /Services 2 Section -->
 
-  
+    <!-- Testimonials Section -->
 
-    <!-- Services Section -->
+    <!-- Recent Posts Section -->
 
     <!-- Call To Action Section -->
 
@@ -320,8 +349,8 @@
         </div>
 
         <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
-          <h3>Follow Us On:</h3>
           <div class="social-links">
+            <h3>Follow Us On:</h3>
             <a href="https://www.tiktok.com/@jerowaruberseru" target="_blank" rel="noopener noreferrer">
               <i class="bi bi-tiktok"></i>
             </a>
@@ -352,10 +381,6 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
