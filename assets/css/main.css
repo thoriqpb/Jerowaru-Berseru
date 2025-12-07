@@ -854,6 +854,33 @@ section,
   z-index: 3;
 }
 
+/* Logo di Hero Section */
+.hero .carousel-container .hero-logo {
+  height: 200px;        /* tinggi tetap desktop */
+  width: auto;          /* lebar menyesuaikan secara proporsional */
+  display: block;
+  margin: 0 auto 0;
+  z-index: 4;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero .carousel-container .hero-logo {
+    height: 100px;
+    margin-bottom: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero .carousel-container .hero-logo {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+}
+
+
+
 .hero h2 {
   margin-bottom: 30px;
   font-size: 90px;
@@ -975,11 +1002,24 @@ section,
 
 .services .content .service-item {
   background-color: var(--surface-color);
-  padding: 20px 30px;
+  padding: 20px 20px;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   border-left: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   position: relative;
+
+  /* Fix size kotak */
+  width: 100%; /* biar mengikuti col grid */
+  height: 200px; /* sesuaikan tinggi sesuai kebutuhan */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* atau center */
+  align-items: center;
+  text-align: center;
+
+  /* Optional: agar konten tidak overflow */
+  overflow: hidden;
 }
+
 
 .services .content .service-item .number {
   position: absolute;
