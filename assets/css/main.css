@@ -782,7 +782,8 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 5px;
+  padding-top: 20px;
   position: relative;
 }
 
@@ -1482,7 +1483,7 @@ section,
 # Team Section
 --------------------------------------------------------------*/
 .team {
-  padding: 60px 0;
+  padding: 0px;
 }
 
 .team .person {
