@@ -1100,6 +1100,34 @@ section,
   color: var(--contrast-color);
   border-radius: 6px;
 }
+
+.about .list-check {
+  margin-bottom: 50px;
+}
+
+.about .list-check li {
+  display: block;
+  padding-left: 30px;
+  position: relative;
+}
+
+.about .list-check li:before {
+  content: "\f26e";
+  display: inline-block;
+  font-family: "bootstrap-icons" !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -0.125em;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  top: 0.1rem;
+  font-size: 20px;
+  left: 0;
+  color: var(--nav-color);
+}
 /*--------------------------------------------------------------
 # Services 2 Section
 --------------------------------------------------------------*/
