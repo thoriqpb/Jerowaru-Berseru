@@ -1090,7 +1090,7 @@ section,
 @media (max-width: 576px) {
   .services .content [class^=col-] .service-item {
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
   }
 }
 
@@ -1104,7 +1104,10 @@ section,
 .about .content {
   background: var(--accent-color);
   color: var(--contrast-color);
-  padding: 7rem 0;
+  padding: 6rem 0; /* Padding ditambah karena pinggiran akan dipotong miring */
+  
+  /* Memotong sudut atas-bawah agar miring (diagonal) */
+  clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
 }
 
 .about .content .img-overlap {
@@ -1117,7 +1120,7 @@ section,
 
 .about .content-title {
   color: var(--contrast-color);
-  font-weight: 300;
+  font-weight: 700; /* Diubah dari 300 menjadi 700 (bold) */
   text-align: left;
 }
 
@@ -1470,9 +1473,16 @@ section,
 /*--------------------------------------------------------------
 # About 3 Section
 --------------------------------------------------------------*/
+.about-3 .content {
+  background: var(--surface-color);
+  color: var(--contrast-color);
+  padding: 0rem 0;
+}
+
 .about-3 .content-title {
   color: var(--nav-color);
   margin-bottom: 30px;
+  font-weight: 700;
 }
 
 .about-3 .btn-cta {
@@ -2432,3 +2442,23 @@ section,
   display: block;
 }
 
+
+/*--------------------------------------------------------------
+# Sponsors Section
+--------------------------------------------------------------*/
+.sponsors .sponsors-shape {
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.sponsors .sponsor-logo {
+  max-height: 80px;
+  width: auto;
+  transition: all 0.3s ease-in-out;
+  /* Membuat logo abu-abu secara default, akan berwarna saat di-hover (opsional, hapus filter jika ingin logo tetap berwarna) */
+  filter: grayscale(100%) opacity(70%); 
+}
+
+.sponsors .sponsor-logo:hover {
+  filter: grayscale(0%) opacity(100%);
+  transform: scale(1.1);
+}
