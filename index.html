@@ -100,37 +100,51 @@
 
     </section><!-- /Hero Section -->
 
-    <!-- Gambaran KKN UGM Section -->
+<!-- Gambaran KKN UGM Section -->
     <section id="kkn-overview" class="kkn-overview section light-background">
       <div class="container" data-aos="fade-up">
         
-        <!-- Section Title (Opsional, bisa dihapus jika tidak perlu) -->
-        <div class="container section-title" data-aos="fade-up">
+        <!-- Section Title -->
+        <div class="section-title text-center mb-5" data-aos="fade-up">
           <h2>Tentang Kegiatan</h2>
           <p>KKN-PPM UGM 2026</p>
+          
+          <!-- Tambahan Garis Pemisah (Divider) -->
+          <hr style="width: 80px; margin: 15px auto 20px; border: 2px solid var(--accent-color); opacity: 1;">
+          
+          <!-- Tambahan Teks Pengantar Singkat -->
+          <p class="mx-auto" style="font-size: 16px; color: color-mix(in srgb, var(--default-color), transparent 30%); max-width: 600px;">
+            Kolaborasi aksi nyata dan inovasi berkelanjutan dari mahasiswa UGM untuk kemajuan masyarakat di Kecamatan Jerowaru, Lombok Timur.
+          </p>
         </div><!-- End Section Title -->
 
         <div class="row justify-content-center">
           <div class="col-lg-10 text-center">
             
-            <!-- Foto KKN UGM (Center) -->
-            <div class="mb-5" data-aos="zoom-in" data-aos-delay="100">
-              <!-- Pastikan path gambar 'assets/img/foto-kkn.jpg' sesuai dengan nama file Anda -->
-              <img src="assets/img/kknugm2025.png" alt="Foto KKN UGM Periode II 2026" class="img-fluid rounded shadow" style="max-height: 450px; object-fit: cover; width: 100%;">
-            </div>
-            
-            <!-- Deskripsi Umum KKN -->
-            <p class="lead mb-4" style="line-height: 1.8; color: #444444;" data-aos="fade-up" data-aos-delay="200">
-              Kegiatan Kuliah Kerja Nyata – Pembelajaran Pemberdayaan Masyarakat (KKN-PPM) Universitas Gadjah Mada Periode II Tahun 2026 merupakan bentuk nyata pengabdian mahasiswa kepada masyarakat melalui pendekatan interdisipliner, kolaboratif, dan berbasis kebutuhan lokal.
-            </p>
-            
-            <!-- Tema KKN -->
-            <div class="theme-box p-4 mt-4 rounded shadow-sm text-start" data-aos="fade-up" data-aos-delay="300" style="background-color: #ffffff; border-left: 5px solid #285430;">
-              <h5 class="fw-bold mb-3" style="color: #285430;">Tema yang Diusung:</h5>
-              <p class="fst-italic mb-0" style="font-size: 1.1rem; color: #555555;">
-                "Mewujudkan Sustainable Welfare Berbasis Kearifan Lokal melalui Inovasi Agro-Maritim: Penguatan Kapasitas Masyarakat, Peningkatan Ecotourism, dan Optimalisasi Infrastruktur Menuju Desa Sekaroh dan Seriwe yang Berdaya"
+            <!-- Box Pembungkus Konten -->
+            <!-- Background dibuat lebih soft dengan mencampurkan 75% transparan pada --accent-color -->
+            <div class="kkn-box p-4 p-md-5 rounded-4 shadow-sm border" style="background-color: color-mix(in srgb, var(--accent-color), transparent 75%); border-color: color-mix(in srgb, var(--accent-color), transparent 50%) !important;">
+              
+              <!-- Foto KKN UGM (Center) dengan overflow-hidden agar gambar tidak keluar batas saat di-zoom -->
+              <div class="mb-5 overflow-hidden rounded-4 shadow" data-aos="zoom-in" data-aos-delay="100">
+                <img src="assets/img/kknugm2025.png" alt="Foto KKN UGM Periode II 2026" class="img-fluid kkn-zoom-img" style="max-height: 450px; object-fit: cover; width: 100%;">
+              </div>
+              
+              <!-- Deskripsi Umum KKN -->
+              <p class="lead mb-4" style="line-height: 1.8; color: var(--heading-color); font-weight: 500;" data-aos="fade-up" data-aos-delay="200">
+                Kegiatan Kuliah Kerja Nyata – Pembelajaran Pemberdayaan Masyarakat (KKN-PPM) Universitas Gadjah Mada Periode II Tahun 2026 merupakan bentuk nyata pengabdian mahasiswa kepada masyarakat melalui pendekatan interdisipliner, kolaboratif, dan berbasis kebutuhan lokal.
               </p>
+              
+              <!-- Tema KKN -->
+              <div class="theme-box p-4 mt-4 rounded shadow-sm text-start" data-aos="fade-up" data-aos-delay="300" style="background-color: #ffffff; border-left: 5px solid #285430;">
+                <h5 class="fw-bold mb-3" style="color: #285430;">Tema yang Diusung:</h5>
+                <p class="fst-italic mb-0" style="font-size: 1.1rem; color: #555555;">
+                  "Mewujudkan Sustainable Welfare Berbasis Kearifan Lokal melalui Inovasi Agro-Maritim: Penguatan Kapasitas Masyarakat, Peningkatan Ecotourism, dan Optimalisasi Infrastruktur Menuju Desa Sekaroh dan Seriwe yang Berdaya"
+                </p>
+              </div>
+
             </div>
+            <!-- /Box Pembungkus Konten -->
 
           </div>
         </div>
@@ -138,87 +152,91 @@
     </section>
     <!-- /Gambaran KKN UGM Section -->
      
-<!-- Judul Lokasi Pengabdian Section -->
-    <section id="lokasi-title" class="section pb-0 pt-5">
+<!-- Lokasi Pengabdian Section (Gabungan) -->
+    <section id="lokasi-pengabdian" class="about section light-background pb-5">
+      
+      <!-- 1. Container Judul Lokasi Pengabdian -->
       <div class="container" data-aos="fade-up">
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-8">
-            <span class="d-block mb-2" style="font-size: 14px; letter-spacing: 2px; color: color-mix(in srgb, var(--default-color), transparent 40%); text-transform: uppercase;">
-              - Lokasi Pengabdian -
-            </span>
-            <h2 class="fw-bold mb-3" style="font-size: 36px; color: var(--heading-color);">
-              Dua Desa, Satu Misi
-            </h2>
-            <hr style="width: 80px; margin: 0 auto; border: 2px solid var(--accent-color); opacity: 1;">
-            <p class="mt-3" style="font-size: 16px; letter-spacing: 1px; color: color-mix(in srgb, var(--default-color), transparent 30%); text-transform: uppercase;">
-              Kecamatan Jerowaru, Nusa Tenggara Barat
-            </p>
+        <div class="row justify-content-center text-center" style="margin-bottom: -1px; position: relative; z-index: 10;">          <div class="col-lg-8">
+            <!-- Shape Container untuk Judul Saja -->
+            <div class="title-shape bg-white p-4 p-md-5 rounded-4 shadow-sm border" style="border-color: color-mix(in srgb, var(--default-color), transparent 93%) !important;">
+              <span class="d-block mb-2" style="font-size: 14px; letter-spacing: 2px; color: color-mix(in srgb, var(--default-color), transparent 40%); text-transform: uppercase;">
+                - Lokasi Pengabdian -
+              </span>
+              <h2 class="fw-bold mb-3" style="font-size: 36px; color: var(--heading-color);">
+                Dua Desa, Satu Misi
+              </h2>
+              <hr style="width: 80px; margin: 0 auto; border: 2px solid var(--accent-color); opacity: 1;">
+              <p class="mt-3 mb-0" style="font-size: 16px; letter-spacing: 1px; color: color-mix(in srgb, var(--default-color), transparent 30%); text-transform: uppercase;">
+                Kecamatan Jerowaru, Nusa Tenggara Barat
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- /Judul Lokasi Pengabdian Section -->
+      </div> 
+      <!-- Tutup container di sini agar background Sekaroh bisa terbentang penuh (full-width) -->
 
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="content">
+      <!-- 2. Desa Sekaroh (Full-Width Background) -->
+      <div class="content mb-5">
+        <!-- Buka container khusus untuk membungkus konten Sekaroh di tengah -->
         <div class="container">
-          <div class="row">
+          <div class="row gy-4 align-items-center">
             <div class="col-lg-6 mb-4 mb-lg-0">
-              <img src="assets/img/desa sekaroh.png" alt="Image" class="img-fluid" data-aos="zoom-out">
+              <!-- Class img-overlap dikembalikan agar sesuai desain aslinya -->
+              <img src="assets/img/desa sekaroh.png" alt="Desa Sekaroh" class="img-fluid" data-aos="zoom-out">
             </div>
 
             <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
               <h2 class="content-title mb-4">
                 Desa Sekaroh
               </h2>
-
               <p class="opacity-10">
                 Desa Sekaroh merupakan wilayah yang terletak di Kecamatan Jerowaru, Kabupaten Lombok Timur. Desa ini memiliki potensi sumber daya alam dan pariwisata bahari yang signifikan, meliputi deretan pesisir dan gili seperti Pantai Pink, Gili Petelu, Pantai Segui, serta kawasan konservasi penyu di Tanjung Bloam.
               </p>
-
               <ul class="list-unstyled mb-5">
                 <li class="mb-3">👥 Populasi penduduk tercatat sebanyak 4.197 jiwa</li>
                 <li class="mb-3">🏖️ Dikenal sebagai lokasi destinasi pariwisata unggulan Pantai Pink</li>
                 <li class="mb-3">🤿 Memiliki kawasan ekowisata dan area <em>snorkeling</em> di Gili Petelu</li>
               </ul>
-              
               <p><a href="sekaroh.html" class="btn-cta">Telusuri Desa</a></p>
-              
             </div>
           </div>
         </div>
       </div>
       
-    </section>
-    <!-- /About Section -->
-    
-    <!-- About 3 Section -->
-    <section id="about-3" class="about-3 section">
-
-      <div class="container">
-        <div class="row gy-4 justify-content-between align-items-center">
-          <div class="col-lg-6 order-lg-2 position-relative" data-aos="zoom-out">
-            <img src="assets/img/desa seriwe.png" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-lg-5 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="content-title mb-4">Desa Seriwe</h2>
-            <p class="mb-4">
-              Desa Seriwe merupakan wilayah administratif hasil pemekaran dari Desa Pemongkong yang berlokasi di Kecamatan Jerowaru, Kabupaten Lombok Timur. Memiliki luas wilayah sekitar 14,67 km², desa ini diklasifikasikan ke dalam kategori Inpres Desa Tertinggal (IDT). Demografi masyarakat Seriwe bersifat majemuk dengan kehadiran penduduk pendatang multietnis, di mana pranata adat setempat dipimpin oleh tokoh yang dikenal dengan sebutan <em>Gawah Seriwe</em>.
-            </p>
+      <!-- 3. Container Buka Kembali untuk Desa Seriwe -->
+      <div class="container" data-aos="fade-up">
+        <div class="about-3 mt-5 pt-4">
+          <div class="row gy-4 justify-content-between align-items-center">
+            <div class="col-lg-6 order-lg-2 position-relative" data-aos="zoom-out">
+              <img src="assets/img/desa seriwe.png" alt="Desa Seriwe" class="img-fluid rounded-4 shadow-sm">
+            </div>
             
-            <ul class="list-unstyled mb-5">
-              <li class="mb-3">👥 Memiliki total populasi penduduk sebanyak 3.635 jiwa</li>
-              <li class="mb-3">🌾 Mata pencaharian utama masyarakat berpusat pada sektor pertanian dan perikanan</li>
-              <li class="mb-3">🌽 Menghasilkan komoditas unggulan daerah berupa jagung dan rumput laut</li>
-            </ul>
-
-            <p><a href="seriwe.html" class="btn-cta">Telusuri Desa</a></p>
+            <div class="col-lg-5 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+              <h2 class="content-title mb-4" style="color: var(--nav-color); font-weight: 700;">
+                Desa Seriwe
+              </h2>
+              <p class="mb-4">
+                Desa Seriwe merupakan wilayah administratif hasil pemekaran dari Desa Pemongkong yang berlokasi di Kecamatan Jerowaru, Kabupaten Lombok Timur. Memiliki luas wilayah sekitar 14,67 km², desa ini diklasifikasikan ke dalam kategori Inpres Desa Tertinggal (IDT). Demografi masyarakat Seriwe bersifat majemuk dengan kehadiran penduduk pendatang multietnis, di mana pranata adat setempat dipimpin oleh tokoh yang dikenal dengan sebutan <em>Gawah Seriwe</em>.
+              </p>
+              <ul class="list-unstyled mb-5">
+                <li class="mb-3">👥 Memiliki total populasi penduduk sebanyak 3.635 jiwa</li>
+                <li class="mb-3">🌾 Mata pencaharian utama masyarakat berpusat pada sektor pertanian dan perikanan</li>
+                <li class="mb-3">🌽 Menghasilkan komoditas unggulan daerah berupa jagung dan rumput laut</li>
+              </ul>
+              <p>
+                <a href="seriwe.html" class="btn-cta" style="background-color: var(--accent-color); color: var(--contrast-color); padding: 15px 30px; border-radius: 6px; text-transform: uppercase; font-size: 14px;">
+                  Telusuri Desa
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
+      <!-- Tutup container Seriwe -->
+
     </section>
+    <!-- /Lokasi Pengabdian Section -->
 
     <!-- Services 2 Section -->
     <section id="services-2" class="services-2 section dark-background">
@@ -389,26 +407,25 @@
 
 <!-- Sponsors Section -->
     <section id="sponsors" class="sponsors section light-background">
-      <div class="container" data-aos="fade-up">
+      <!-- MENGHAPUS data-aos="fade-up" di sini agar tidak bertumpuk -->
+      <div class="container">
 
         <!-- Section Title -->
-        <!-- Menambahkan 'mb-5' untuk memberi jarak antara judul dan kotak gambar -->
-        <!-- Menghapus class 'container' yang bertumpuk agar padding tidak ganda -->
-        <div class="section-title text-center mb-5" data-aos="fade-up">
-          <!-- Menggunakan h2 agar styling bawaan template (.section-title h2) tidak rusak -->
+        <!-- Menambahkan data-aos-offset="0" agar animasi langsung dimulai saat elemen tersentuh layar -->
+        <div class="section-title text-center mb-5" data-aos="fade-up" data-aos-offset="-600">
           <h1>Dukungan & Kolaborasi</h1>
-          <p>Mitra Terdahulu</p>
+          <p>Mitra Saat Ini</p>
           <hr style="width: 80px; margin: 15px auto 20px; border: 2px solid var(--accent-color); opacity: 1;">
           
-          <!-- Mengubah div menjadi p dan menambahkan max-width agar teks tidak terlalu melebar di layar PC -->
           <p class="mx-auto" style="font-size: 16px; color: color-mix(in srgb, var(--default-color), transparent 30%); max-width: 600px;">
-            Institusi dan perusahaan yang telah mendukung kegiatan KKN-PPM UGM pada periode sebelumnya
+            Institusi dan perusahaan yang telah mendukung kegiatan KKN-PPM UGM pada periode saat ini
           </p>
         </div>
         <!-- End Section Title -->
 
         <!-- Container Logo -->
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+        <!-- MENGHAPUS data-aos-delay="100" dan menambahkan offset 0 -->
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-offset="-500">
           <div class="col-lg-10">
             <div class="sponsors-shape bg-white p-4 p-md-5 rounded-4 shadow-sm">
               
@@ -438,8 +455,7 @@
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
-              <!-- <img src="assets/img/logonama.png" alt="AgriCulture"> -->
-              <span class="sitename">Jerowaru Berseru</span>
+              <img src="assets/img/logonama.png" alt="Logo Jerowaru Berseru" class="img-fluid">
             </a>
             <div class="footer-contact pt-3">
               <p>KKN-PPM UGM Periode II Tahun 2026</p>
