@@ -226,22 +226,26 @@ h6 {
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 5px 0;
+  padding: 0; /* Diubah dari 5px 0 menjadi 0 agar tidak ada jarak ekstra di atas/bawah */
   transition: all 0.5s;
   z-index: 997;
 }
 
 .header .logo {
   line-height: 1;
+  /* Tambahkan padding ringan khusus untuk logo agar tidak menabrak tepi layar */
+  padding: 10px 0; 
 }
 
 .header .logo img {
-  max-height: 32px;
+  max-height: 26px; /* Dikecilkan dari 32px agar lebih proporsional dengan header tipis */
   margin-right: 8px;
+  /* Efek shadow halus yang mengikuti bentuk ikon/logo */
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15)); 
 }
 
 .header .logo h1 {
-  font-size: 20px;
+  font-size: 18px; /* Dikecilkan dari 20px */
   margin: 0;
   font-weight: 700;
   color: var(--heading-color);
@@ -249,6 +253,17 @@ h6 {
 
 .scrolled .header {
   box-shadow: 0px 0 18px color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+/*--------------------------------------------------------------
+# Tambahan: Memipihkan Menu Navigasi Desktop
+--------------------------------------------------------------*/
+@media (min-width: 1200px) {
+  .navmenu a,
+  .navmenu a:focus {
+    /* Mengurangi padding vertikal menu dari 18px menjadi 10px agar tinggi header ikut menyusut */
+    padding: 10px 15px !important; 
+  }
 }
 
 /*--------------------------------------------------------------
@@ -505,11 +520,11 @@ h6 {
 
 .footer .footer-about .logo {
   line-height: 1;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
 }
 
 .footer .footer-about .logo img {
-  max-height: 40px;
+  max-height: 120px;
   margin-right: 6px;
 }
 
@@ -810,7 +825,7 @@ section,
 
 .hero .carousel {
   width: 100%;
-  min-height: calc(100vh - 100px);
+  min-height: 95vh;
   padding: 0;
   margin: 0;
   background-color: var(--background-color);
@@ -1102,12 +1117,18 @@ section,
 }
 
 .about .content {
-  background: var(--accent-color);
+  /* Menggunakan warna accent dengan transparansi 60% */
+  background: color-mix(in srgb, var(--accent-color), transparent 40%);
   color: var(--contrast-color);
-  padding: 6rem 0; /* Padding ditambah karena pinggiran akan dipotong miring */
-  
-  /* Memotong sudut atas-bawah agar miring (diagonal) */
+  padding: 6rem 0; 
   clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
+  
+  /* Efek blur yang lebih kuat */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  /* Border putih tipis dengan sedikit transparansi accent */
+  border: 1px solid color-mix(in srgb, #ffffff 60%, var(--accent-color)); 
 }
 
 .about .content .img-overlap {
@@ -1620,7 +1641,7 @@ section,
 # Swiper Adjustments for Team Section
 --------------------------------------------------------------*/
 .team .swiper {
-  padding: 20px 0;
+  padding: 20px 0 40px 0;
 }
 
 .team .swiper-slide {
@@ -2442,6 +2463,16 @@ section,
   display: block;
 }
 
+/*--------------------------------------------------------------
+# KKN Overview Section (Hover Image)
+--------------------------------------------------------------*/
+.kkn-overview .kkn-zoom-img {
+  transition: transform 0.5s ease; /* Membuat transisi pergerakan halus */
+}
+
+.kkn-overview .kkn-zoom-img:hover {
+  transform: scale(1.05); /* Memperbesar gambar sebanyak 5% saat di-hover */
+}
 
 /*--------------------------------------------------------------
 # Sponsors Section
@@ -2461,4 +2492,147 @@ section,
 .sponsors .sponsor-logo:hover {
   filter: grayscale(0%) opacity(100%);
   transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+# Team Section - Modern Solid Card
+--------------------------------------------------------------*/
+.team .person {
+  position: relative;
+  background-color: var(--surface-color); /* Warna putih/terang */
+  border-radius: 16px; /* Sudut melengkung */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Bayangan lembut */
+  overflow: hidden; /* Agar gambar mengikuti lengkungan sudut atas */
+  padding-bottom: 25px; /* Jarak ruang di bagian bawah teks */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  height: 100%; /* Menjaga tinggi seragam */
+}
+
+.team .person:hover {
+  transform: translateY(-10px); /* Efek kartu terangkat saat hover */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.team .person figure {
+  margin-bottom: 20px; /* Jarak antara foto dan nama diperkecil */
+  padding-bottom: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.team .person img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1 / 1;
+  transition: transform 0.4s ease;
+}
+
+.team .person:hover img {
+  transform: scale(1.08); /* Efek zoom foto di dalam kartu */
+}
+
+/* Merapikan teks di dalam kontainer */
+.team .person .person-contents {
+  text-align: center;
+  padding: 0 15px; /* Memberi jarak aman teks dari tepi kiri-kanan kartu */
+}
+
+.team .person .person-contents h3 {
+  color: var(--heading-color);
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.team .person .person-contents h1 {
+  color: var(--accent-color); /* Memberi warna aksen pada jabatan */
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0;
+  margin: 10px 0 0 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.team .person .person-contents .position {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 14px;
+  display: block;
+  line-height: 1.4;
+}
+
+/*--------------------------------------------------------------
+# Custom Blog Modal (Pop-up)
+--------------------------------------------------------------*/
+.custom-blog-modal {
+  /* Latar belakang mencampurkan warna aksen dengan warna background utama */
+  background-color: color-mix(in srgb, var(--accent-color), var(--surface-color, #ffffff) 92%); 
+  
+  /* Bentuk sudut dan batas */
+  border-radius: 30px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+/* Tombol silang (close) yang melayang di pojok kanan atas */
+.custom-close-btn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 10;
+  background-color: var(--surface-color, #ffffff); /* Menggunakan warna solid putih template */
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.custom-close-btn:hover {
+  background-color: var(--accent-color); /* Berubah warna saat di-hover */
+  opacity: 1;
+}
+
+/* Teks dua kolom */
+.two-column-text {
+  column-count: 2; /* Membagi teks jadi 2 kolom */
+  column-gap: 40px; /* Jarak antar kolom */
+  text-align: justify; /* Teks rata kanan kiri */
+  color: var(--default-color); /* Menggunakan warna teks standar template */
+  line-height: 1.8;
+}
+
+/* ========================================================
+   RESPONSIVITAS (TABLET & MOBILE)
+   ======================================================== */
+
+/* Tablet (Layar di bawah 992px) */
+@media (max-width: 991px) {
+  .two-column-text {
+    column-gap: 25px; /* Jarak antar kolom agak dirapatkan */
+  }
+}
+
+/* Mobile / HP (Layar di bawah 768px) */
+@media (max-width: 767px) {
+  .custom-blog-modal {
+    border-radius: 20px; /* Lengkungan dikurangi agar ruang tidak termakan banyak */
+  }
+  
+  .custom-blog-modal .modal-body {
+    padding: 1.5rem !important; /* Jarak teks ke tepi layar dikurangi agar tidak terlalu sempit */
+  }
+
+  .custom-close-btn {
+    top: 15px;
+    right: 15px;
+    padding: 10px; /* Ukuran tombol close sedikit dikecilkan */
+  }
+
+  .two-column-text {
+    column-count: 1; /* Teks diubah menjadi 1 kolom menyatu dari atas ke bawah */
+    text-align: left; /* Teks rata kiri lebih mudah dibaca di HP daripada justify */
+  }
 }
